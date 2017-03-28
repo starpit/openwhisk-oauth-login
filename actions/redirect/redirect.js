@@ -1,7 +1,7 @@
 function main(params) {
     if (params.state && params.state.redirect_uri) {
 	const payload = {
-	    code: 302,
+	    statusCode: 302,
 	    headers: {
 		location: params.state.redirect_uri
 	    }
